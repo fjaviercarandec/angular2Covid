@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "ejercicio2covid"
+  "defaultProject": "ejercicio2covid",
+  "cli": {
+    "analytics": false
+  }
 }

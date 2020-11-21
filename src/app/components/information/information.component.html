@@ -1,0 +1,11 @@
+<div class="card-columns">
+  <div *ngFor="let country of countries" class="card">
+    <h5 class="card-header">{{ country.Country }}</h5>
+    <div class="card-body">
+      <h6 class="card-title">Information (new/total)</h6>
+      <p class="card-text">Confirmed: {{ country.NewConfirmed }}/{{ country.TotalConfirmed }}</p>
+      <p class="card-text">Deceased: {{ country.NewDeaths }}/{{ country.TotalDeaths }}</p>
+      <p class="card-text">Recovered: {{ country.NewRecovered }}/{{ country.TotalRecovered }}</p>
+    </div>
+  </div>
+</div>

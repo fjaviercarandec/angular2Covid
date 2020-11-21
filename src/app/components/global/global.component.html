@@ -1,0 +1,20 @@
+<div class="card-columns">
+  <div class="card">
+    <h5 class="card-header">Global</h5>
+    <div class="card-body">
+      <h6 class="card-title">Information (new/total)</h6>
+      <p class="card-text">Confirmed: {{ global.NewConfirmed }}/{{ global.TotalConfirmed }}</p>
+      <p class="card-text">Deceased: {{ global.NewDeaths }}/{{ global.TotalDeaths }}</p>
+      <p class="card-text">Recovered: {{ global.NewRecovered }}/{{ global.TotalRecovered }}</p>
+    </div>
+  </div>
+  <div *ngFor="let es of spain" class="card">
+    <h5 class="card-header">{{ es.Country }}</h5>
+    <div class="card-body">
+      <h6 class="card-title">Information (new/total)</h6>
+      <p class="card-text">Confirmed: {{ es.NewConfirmed }}/{{ es.TotalConfirmed }}</p>
+      <p class="card-text">Deceased: {{ es.NewDeaths }}/{{ es.TotalDeaths }}</p>
+      <p class="card-text">Recovered: {{ es.NewRecovered }}/{{ es.TotalRecovered }}</p>
+    </div>
+  </div>
+</div>
